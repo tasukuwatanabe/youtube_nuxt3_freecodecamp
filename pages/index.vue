@@ -1,5 +1,5 @@
 <template>
   <div class="main">
-    <ProfileHeaderAvatar/>
+    <IconsApple />
   </div>
 </template>
