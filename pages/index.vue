@@ -1,10 +1,9 @@
 <script setup>
-const { sayHello } = useUtils();
-sayHello();
+  const { $sayHello } = useNuxtApp();
 </script>
 
 <template>
   <div class="main">
-    <IconsApple />
+    <h1>{{ $sayHello('Tom') }}</h1>
   </div>
 </template>
