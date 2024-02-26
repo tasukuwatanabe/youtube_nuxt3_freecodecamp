@@ -1,18 +1,10 @@
-<script setup lang="ts">
-const counter = useCounter();
+<script setup>
+const res = await $fetch('/api/hello');
+console.log(res);
 </script>
 
 <template>
   <div>
-    <div id="main">
-      Counter: {{ counter }}
-      <button @click="counter++">
-        +
-      </button>
-      <button @click="counter--">
-        -
-      </button>
-    </div>
-    <Counter id="counter" />
+    <ContentDoc />
   </div>
 </template>
